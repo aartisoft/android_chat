@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bg_white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/text_1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_med" />
+
+
+        <ImageView
+            android:id="@+id/callerAvatar"
+            android:layout_width="@dimen/avatar_large_size"
+            android:layout_height="@dimen/avatar_large_size"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/material_margin" />
+
+        <net.wrappy.im.helper.layout.AppTextView
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <net.wrappy.im.helper.layout.AppTextView
+            android:id="@+id/title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="@string/ringing"
+            android:textColor="#979797"
+            android:textSize="20sp"
+            app:font_type="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <net.ironrabbit.type.CustomTypefaceButton
+                android:id="@+id/btnDecline"
+                android:layout_width="@dimen/button_medium_size"
+                android:layout_height="@dimen/button_medium_size"
+                android:layout_margin="@dimen/material_margin"
+                android:background="@drawable/ic_cancel" />
+
+            <net.ironrabbit.type.CustomTypefaceButton
+                android:id="@+id/btnAccept"
+                android:layout_width="@dimen/button_medium_size"
+                android:layout_height="@dimen/button_medium_size"
+                android:layout_margin="@dimen/material_margin"
+                android:background="@drawable/ic_call"
+                android:textColor="@color/finestWhite" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

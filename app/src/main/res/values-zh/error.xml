@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_question_duplicate">你不能選擇同樣的安全問題</string>
+    <string name="error_empty_answer">問題%d的答案是空的</string>
+    <string name="error_min_length_answer">你的問題%d的答案必須至少有3個字母</string>
+    <string name="error_duplicate_answer">你的回答必須是不同的</string>
+    <string name="error_invalid_text_length">用戶名必須至少為6個字符</string>
+    <string name="error_invalid_characters">用戶名不能包含特殊字符</string>
+    <string name="error_empty_phone">請輸入手機號碼</string>
+    <string name="error_empty_email">請輸入電子郵件地址</string>
+    <string name="error_empty_passcode">請輸入密碼</string>
+    <string name="error_invalid_passcode">請檢查密碼</string>
+    <string name="error_invalid_email">電子郵件地址是不是有效格式</string>
+    <string name="error_group_name_empty">請輸入組名</string>
+    <string name="error_group_empty">請選擇會員</string>
+    <string name="error_empty_username">請輸入您的用戶名</string>
+    <string name="error_wrong_answer_1st">答案錯了！再試一次</string>
+    <string name="error_wrong_answer_2nd">答案錯了！請用電子郵件嘗試</string>
+
+
+    <!--error code from server-->
+    <string name="error_0">互聯網可能不可用。請再試一次</string>
+    <string name="error_8000">版本不匹配</string>
+    <string name="error_8001">訪問被拒絕</string>
+    <string name="error_8002">請稍後再試</string>
+    <string name="error_8003">會員已存在</string>
+    <string name="error_8004">成員不存在</string>
+    <string name="error_8005">會員已經激活</string>
+    <string name="error_8006">會員未激活</string>
+    <string name="error_8007">會員輸入了無效的電子郵件地址</string>
+    <string name="error_8009">驗證碼已過期或無效</string>
+    <string name="error_8010">圖片不存在</string>
+    <string name="error_8011">圖片保留失敗文件是空的</string>
+    <string name="error_8013">圖像的獲取失敗文件不可用</string>
+    <string name="error_8016">資產類型不能確定</string>
+    <string name="error_8017">註冊不存在</string>
+    <string name="error_8020">無法發送電子郵件</string>
+    <string name="error_8021">短信已超過字符限制</string>
+    <string name="error_8022">此用戶名已存在</string>
+    <string name="error_8023">手機號碼已經存在</string>
+    <string name="error_8024">電子郵件已經存在</string>
+    <string name="error_8025">資源不存在</string>
+    <string name="error_8026">沒有發現會員的安全問題</string>
+    <string name="error_8027">成員不存在</string>
+    <string name="error_8028">電子郵件不存在</string>
+    <string name="error_8029">報告中已存在</string>
+    <string name="error_8030">報告不存在</string>
+    <string name="error_8031">推薦代碼不存在</string>
+    <string name="error_8032">在失敗XMPP創建用戶</string>
+    <string name="error_8033">哎呀！你回答錯了安全問題</string>
+    <string name="error_8034">的用戶名或圖案是不正確</string>
+    <string name="error_8035">The username or password is incorrect. You have only 2 times to input again.</string>
+    <string name="error_8036">The username or password is incorrect. You have only 1 time to input again.</string>
+    <string name="error_8037">The username or password is incorrect. Your account is locked in 3 hours.</string>
+    <string name="error_8038">The username or password is incorrect. Your account has been blocked.</string>
+    <string name="error_unknown">An error occurred, please try again later.</string>
+    <string name="error_empty_nickname">Your Nickname must have at least 1 character</string>
+
+</resources>

@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='UTF-8'?><!--
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General: Names -->
+    <string name="ic_launcher_name">Wrappy</string>
+    <string name="app_name">Wrappy</string>
+    <string name="im_label">Wrappy</string>
+    <string name="app_version">Version</string>
+    <!-- General: Permissions -->
+    <string name="ro_perm_label">read instant messages</string>
+    <string name="ro_perm_desc">Allows applications to read data from the IM content provider.</string>
+    <string name="wo_perm_label">write instant messages</string>
+    <string name="wo_perm_desc">Allows applications to write data to the IM content provider.</string>
+    <string name="perm_label">start IM service</string>
+    <string name="perm_desc">Allows applications to start IM service via intent.</string>
+
+    <!-- General: Actions -->
+    <string name="confirm">Confirm</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="connect">Connect</string>
+    <!-- Views -->
+    <string name="title_activity_lock_screen">Wrappy Locked</string>
+    <string name="lock_screen_create_passphrase">Set Password</string>
+    <string name="lock_screen_confirm_passphrase">Confirm Password</string>
+    <string name="lock_screen_passphrase_hint">Password</string>
+    <string name="lock_screen_passphrase_not_set_enter">Please set a passphrase to lock the app</string>
+    <string name="lock_screen_passphrase_not_set_confirm">Confirm New Password</string>
+    <string name="lock_screen_passphrases_not_matching">Password did not match, please try again</string>
+    <string name="lock_screen_skip">Skip &gt;&gt;</string>
+    <!-- Views: Setup -->
+    <string name="add_account">Add <xliff:g id="account">%1$s</xliff:g> account</string>
+    <string name="menu_about">About</string>
+
+    <string name="signed_out_prompt_with_error">You have been signed out of <xliff:g id="account">%1$s</xliff:g> because <xliff:g id="reason">%2$s</xliff:g></string>
+
+
+    <string name="pass_err_length">Your passphrase was not long enough</string>
+    <!-- Views: About: Welcome -->
+    <!-- Views: About: OTR -->
+    <!-- Views: About: Security -->
+    <!-- Views: Account list -->
+    <!-- Views: Setup: Account -->
+    <string name="sign_in">Sign in</string>
+    <string name="account_setup_new_username">new username</string>
+    <string name="account_setup_password">password</string>
+    <string name="account_setup_password_confirm">confirm password</string>
+    <string name="btn_create_new_account">Register Account</string>
+
+    <string name="account_setup_pers_now_title">Sign In Now</string>
+    <string name="select_domain_new_account">Chat service domain</string>
+    <string name="registering_new_account_">Registering new account…</string>
+
+    <string name="signing_in_wait">The application is syncing. Please wait</string>
+    <string name="signing_out_wait">Signing out\u2026</string>
+
+    <!-- Views: Settings: Account -->
+    <string name="do_srv_lookup">Do SRV Lookup</string>
+    <string name="allow_the_username_and_password_to_be_sent_as_plain_text_when_using_an_unencrypted_transport">Allow the username and password to be sent as plain text when using an unencrypted transport</string>
+    <string name="allow_plain_text_auth">Allow Plain Text Auth</string>
+    <string name="require_tls_ssl_connection">Require TLS Connection</string>
+    <string name="transport_encryption">Transport Encryption</string>
+    <string name="how_encrypted_chats_are_started">how encrypted chats are started</string>
+    <string name="the_server_to_connect_to_if_needed">The server to connect to, if needed</string>
+    <string name="connect_server">Connect Server</string>
+    <string name="tcp_port_for_xmpp_server">TCP Port for XMPP Server</string>
+    <string name="server_port">Server Port</string>
+    <string name="xmpp_resource">XMPP Resource</string>
+    <string name="to_distinguish_this_connection_from_other_clients_that_are_also_logged_in">to distinguish this connection from other clients that are also logged in</string>
+    <string name="xmpp_resource_prio_title">XMPP Resource Priority</string>
+    <string name="xmpp_resource_prio_summary">Messages to clients with multiple active resources will be sent to the resource with the highest priority</string>
+
+    <!-- Views: Contact list -->
+    <string name="title_chats">Conversations</string>
+    <string name="empty_account_message">You have no\naccounts configured.\n\nTap here to add one!</string>
+    <string name="menu_remove_contact">Delete Contact</string>
+    <string name="menu_contact_nickname">Contact nickname</string>
+    <string name="menu_view_blocked">Blocked</string>
+    <string name="nickname">Nickname</string>
+
+    <string name="confirm_delete_contact">The contact \"<xliff:g id="user">%1$s</xliff:g>\" will be deleted.</string>
+    <string name="confirm_block_contact">The contact \"<xliff:g id="user">%1$s</xliff:g>\" will be blocked.</string>
+    <string name="add_contact_success">Contact \"<xliff:g id="user">%1$s</xliff:g>\" added.</string>
+    <string name="delete_contact_success">Contact \"<xliff:g id="user">%1$s</xliff:g>\" deleted.</string>
+    <string name="block_contact_success">Contact \"<xliff:g id="user">%1$s</xliff:g>\" blocked.</string>
+    <string name="unblock_contact_success">Contact \"<xliff:g id="user">%1$s</xliff:g>\" unblocked.</string>
+
+    <string name="menu_verify">Verify Contact</string>
+
+    <string name="empty_conversation_group">No conversations open\n\nTap to start chatting!</string>
+
+    <string name="search_label">Contact</string>
+    <string name="search_hint">type the name of a contact to chat with</string>
+    <string name="input_contact_label">Enter your friend\'s full username (ie. wrappyisfun.4x3f5g@wrappy.net) here:</string>
+    <!-- Views: Chat: Single -->
+    <string name="contact_online"><xliff:g id="user">%1$s</xliff:g> is online</string>
+    <string name="contact_away"><xliff:g id="user">%1$s</xliff:g> is away</string>
+    <string name="contact_busy"><xliff:g id="user">%1$s</xliff:g> is busy</string>
+    <string name="contact_offline"><xliff:g id="user">%1$s</xliff:g> is offline</string>
+    <string name="contact_joined"><xliff:g id="user">%1$s</xliff:g> has joined</string>
+    <string name="contact_left"><xliff:g id="user">%1$s</xliff:g> has left</string>
+
+    <string name="file_transfer">File Transfer</string>
+    <string name="accept_transfer_">Accept transfer?</string>
+    <string name="wants_to_send_you_the_file">wants to send you the file</string>
+    <string name="no_connection_for_sending">No connection available for sending your share!</string>
+
+    <string name="compose_hint">Send a message</string>
+    <string name="compose_hint_secure">Send private message</string>
+    <string name="menu_end_conversation">End chat</string>
+    <string name="select_link_title">Select link</string>
+
+    <string name="delete">Delete</string>
+    <string name="export_media">Export Media File?</string>
+    <!-- Views: Chat: Group -->
+    <string name="invitation_prompt"><xliff:g id="user">%1$s</xliff:g> has invited you to join a group chat.</string>
+    <string name="accept_invitation">Accept</string>
+    <string name="decline_invitation">Decline</string>
+    <string name="connecting_to_group_chat_">Connecting to group chat…</string>
+
+    <string name="empty_contact_list">No contacts found.\n\nTap to invite.</string>
+
+    <string name="subscription_prompt">Add <xliff:g id="USER">%1$s</xliff:g>?</string>
+    <string name="approve_subscription">Yes</string>
+    <string name="decline_subscription">No</string>
+    <string name="approve_subscription_error">Unable to approve subscription from <xliff:g id="user">%1$s</xliff:g>. Please try again later.</string>
+    <string name="decline_subscription_error">Unable to decline subscription from <xliff:g id="user">%1$s</xliff:g>. Please try again later.</string>
+
+    <!-- Security: OTR -->
+    <string name="otr_session_status_finished">Your contact has stopped the encrypted chat.</string>
+    <string name="otr_mode_force">Force / Require</string>
+    <string name="otr_mode_auto">Automatically Attempt</string>
+    <string name="otr_mode_requested">As Requested</string>
+    <string name="otr_mode_disabled">Disabled / Never</string>
+
+    <!-- Security: OTR: Keyring -->
+    <string name="detected_Otr_keystore_import">We have detected an OTR keystore to import. Would you like to scan the QR password now?</string>
+    <!-- Security: OTR: Verification -->
+    <!-- Security: OTR: Verification: QA -->
+    <string name="smp_question_title">Authentication</string>
+    <string name="smp_question_summary">Enter a question to send to your contact, and the answer you expect them to give, in order to verify they are who they claim to be.</string>
+    <string name="smp_question_hint">the question to ask</string>
+    <string name="qmp_answer_hint">the expected answer</string>
+    <string name="remote_verified_us">Your contact has successfully authenticated you.  Now authenticate your contact by asking your own question.</string>
+    <string name="otr_qa_title">OTR Q&amp;A Verification</string>
+    <string name="chat_encryption_title">Chat Encryption</string>
+    <string name="otr_qa_send">Send</string>
+    <string name="otr_qa_cancel">Cancel</string>
+
+    <!-- Views: VoIP -->
+    <!-- Views: Settings: General -->
+    <!-- Actions: Settings: General: Security and Privacy -->
+    <string name="pref_group_security_title">Security and Privacy</string>
+    <string name="encryption_and_anonymity_title">Network Privacy</string>
+    <!-- Actions: Settings: General: User Interface -->
+    <string name="pref_linkify_on_tor_title">Clickable links</string>
+    <string name="pref_linkify_on_tor_summary">Make the links in chats clickable (WARNING, possible privacy leak!)</string>
+    <string name="menu_locale">Language</string>
+    <string name="KEY_PREF_LANGUAGE_TITLE">Languages</string>
+    <string name="use_system_default">Use system default</string>
+
+    <string name="button_yes_accept_all">Yes, Accept All</string>
+    <string name="pref_delete_unsecured_media_title">Delete Insecure Media</string>
+    <string name="pref_delete_unsecured_media_summary">After sharing a photo or file, automatically delete it from the original, insecure storage after import</string>
+
+    <!-- Actions: Settings: General: Other Tuning -->
+    <string name="pref_group_tuning_title">Other Tuning</string>
+    <string name="start_on_boot">Start Wrappy Automatically</string>
+    <string name="start_on_boot_summary">Always start and automatically sign into previously logged in accounts</string>
+    <string name="hide_offline_contacts">Hide offline contacts</string>
+    <string name="foreground_service_title">Use foreground priority</string>
+    <string name="foreground_service_summary">Reduce the chance that Android will restart our connection service.  This will place a notification in the notification area.</string>
+    <string name="heartbeat_interval_title">Heartbeat interval</string>
+    <string name="heartbeat_interval_summary">Use a higher value (in minutes) to save battery.  A high value may cause the provider to close your connection due to inactivity.</string>
+
+    <!-- Actions: Settings: General: Notifications -->
+    <string name="notification_group_title">Notification settings</string>
+    <string name="notification_enabled_title">IM notifications</string>
+    <string name="notification_enabled_summary">Notify in status bar when IM arrives</string>
+    <string name="notification_vibrate_title">Vibrate</string>
+    <string name="notification_vibrate_summary">Also vibrate when IM arrives</string>
+    <string name="notification_sound_title">Sound</string>
+    <string name="notification_sound_summary">Also play ringtone when IM arrives</string>
+    <string name="notification_ringtone_title">Select Custom Ringtone</string>
+
+    <!-- Actions: Settings: General: Developer -->
+    <string name="pref_debug_title">Enable Debug Logs</string>
+    <string name="pref_debug_summary">Output app log data to standard out / logcat for debugging</string>
+
+    <!-- Alerts: Dialogs -->
+    <string name="bg_data_prompt_message">Network data connectivity (including background data) is needed for the app to login.</string>
+    <string name="prompt_create_new_account_">Create new account?</string>
+    <string name="allow_s_to_create_a_new_chat_account_for_s_">Create a new chat account for username \'%1$s\'?</string>
+    <!-- Alerts: Notifications -->
+    <string name="subscription_notify_text">New friend invitation from <xliff:g id="user">%s</xliff:g></string>
+    <string name="file_notify_text">New file <xliff:g id="filename">%1$s</xliff:g> from <xliff:g id="user">%2$s</xliff:g></string>
+    <string name="notify_groupchat_label">Group chat invitation</string>
+    <string name="group_chat_invite_notify_text">New group chat invitation from <xliff:g id="user">%s</xliff:g></string>
+    <string name="new_messages_notify">New message(s) from</string>
+    <string name="starting_the_chatsecure_service_">Starting the Wrappy service…</string>
+    <string name="app_unlocked">Wrappy is running</string>
+    <!-- Alerts: Exceptions -->
+    <string name="error">Error</string>
+    <string name="attention">Attention</string>
+    <string name="error_prefix">Error: </string>
+    <string name="general_error">Error code <xliff:g id="code">%1$d</xliff:g></string>
+    <string name="add_list_failed">The list was not added.</string>
+    <string name="block_contact_failed">Contact was not blocked.</string>
+    <string name="unblock_contact_failed">Contact was not unblocked.</string>
+    <string name="load_contact_list_failed">Contact list did not load.</string>
+    <string name="cant_connect_to_server">Cannot connect to server. Please check your connection.</string>
+    <string name="contact_already_exist">\"<xliff:g id="user">%1$s</xliff:g>\" already exists in your Contact list.</string>
+    <string name="contact_blocked">Contact \"<xliff:g id="user">%1$s</xliff:g>\" has been blocked.</string>
+    <string name="contact_not_loaded">Please wait while your Contact list loads.</string>
+    <string name="network_error">A network error occurred.</string>
+    <string name="wifi_not_connected_error">WiFi is required for this connection.</string>
+    <string name="service_not_support">The server does not support this functionality.</string>
+    <string name="invalid_password">The password you entered is not valid.</string>
+    <string name="internal_server_error">The server encountered an error.</string>
+    <string name="not_implemented">The server does not support this functionality.</string>
+    <string name="service_unavaiable">The server is currently unavailable.</string>
+    <string name="timeout">The server has timed out.</string>
+    <string name="version_not_supported">The server does not support the current version.</string>
+    <string name="message_queue_full">The message queue is full.</string>
+    <string name="domain_not_supported">The server does not support forwarding to the domain.</string>
+    <string name="unknown_user">The username you entered is not recognized.</string>
+    <string name="recipient_blocked_the_user">Sorry, you are blocked by the user.</string>
+    <string name="session_expired">The session has expired, please sign in again.</string>
+    <string name="forced_logout">you have signed in from another client.</string>
+    <string name="already_logged_in">you have signed in from another client.</string>
+    <string name="msisdn_error">Sorry, the phone number cannot be read from your SIM card. Please contact your operator for help.</string>
+    <string name="not_signed_in">You are currently not signed in.</string>
+    <string name="account_setup_error_server">An error occurred while connecting to the chat server - please check your configuration and try again.</string>
+    <string name="error_suspended_connection">Network is offline</string>
+    <string name="unable_to_create_or_join_group_chat">Unable to create or join group chat</string>
+    <string name="unsupported_incoming_data">Unsupported incoming data, cannot share!</string>
+    <string name="swipe_alert">Wrappy detected that a request was made to remove its task.  Wrappy will likely crash.  Please use the Sign out all menu item from the account list screen instead.</string>
+    <string name="there_is_no_viewer_available_for_this_file_format">There is no viewer available for this file format</string>
+    <string name="msg_sent_failed">This message could not be sent.</string>
+    <string name="disconnected_warning">You are disconnected. Messages will be sent when you reconnect.</string>
+    <string name="error_account_password_mismatch">Your passwords do not match</string>
+    <string name="error_account_settings_priority">Priority must be a number in the range [0 .. 127]</string>
+    <string name="error_account_settings_port">Port number must be a number</string>
+    <string name="error_welcome_database">Major Error: Unable to unlock or load app database. Please re-install the app or clear data.</string>
+    <string name="account_settings_title">Account Settings</string>
+
+    <string name="pref_group_protect_data_title">Protect My Data</string>
+    <string name="panic_trigger_app">Panic Trigger App</string>
+    <string name="panic_trigger_app_summary">A panic app can trigger Wrappy to lock, send a message, delete data, etc.</string>
+    <string name="panic_setup">Panic Setup</string>
+    <string name="panic_setup_summary">Set up how Wrappy reacts to a panic notification.</string>
+    <string name="panic_app_none">None</string>
+    <string name="panic_app_none_summary">No Panic Trigger App, ignore all incoming panic triggers.</string>
+    <string name="panic_app_default">Default</string>
+    <string name="protect_data">Protect My Data</string>
+    <string name="action_done">Done</string>
+    <string name="lock_app">Lock the app</string>
+    <string name="clear_app_data">Clear all data within the app</string>
+    <string name="uninstall_app">Uninstall the app</string>
+    <string name="include_location">Include my location</string>
+    <!--  added 2011/09/01 -->
+    <string name="menu_view_groups">Groups</string>
+
+    <string name="buddies">Buddies</string>
+
+    <string name="contacts">Contacts</string>
+
+
+    <string name="mtm_accept_cert">Accept Server Certificate?</string>
+
+
+    <string name="loading">loading…</string>
+    <!-- Other -->
+
+    <!-- Other: Slide Menu -->
+    <string name="menu_all">All</string>
+    <string name="menu_archive">Archive</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="menu_sign_out">Sign out</string>
+    <!-- Other: Provider -->
+    <string name="provider_full_name_xmpp">Jabber (XMPP)</string>
+    <!-- Other: Development Strings [Do not localize!] -->
+    <!-- Other: Presence States -->
+    <string name="presence_available">Online</string>
+    <string name="presence_busy">Busy</string>
+    <string name="presence_away">Away</string>
+    <string name="presence_idle">Idle</string>
+    <string name="presence_offline">Offline</string>
+    <string name="presence_invisible">Appear Offline</string>
+    <string name="popup_take_photo">Take Photo</string>
+    <string name="popup_choose_gallery">Choose from Gallery</string>
+    <string name="popup_delete_photo">Delete Photo</string>
+
+    <string name="this_is_a_group_chat">Send a group message</string>
+
+    <string name="unable_to_securely_share_this_file">Unable to securely share this file</string>
+
+    <string name="your_keystore_is_corrupted_please_re_install_chatsecure_or_clear_data_for_the_app">Your keystore is corrupted. Please re-install Wrappy or \'clear data\' for the app</string>
+    <string name="swipe_hint">&lt; swipe left and right for more options &gt;</string>
+
+    <string name="no_convos">Time to start using Wrappy</string>
+
+    <string name="title_more">Discover</string>
+    <string name="title_me">Me</string>
+    <string name="no_photos">Shared and received photos will appear here</string>
+    <string name="group_admin">admin</string>
+    <string name="group_you">you</string>
+    <string name="title_activity_launcher">LauncherActivity</string>
+
+    <string name="Page1Titlenull"></string>
+    <string name="Page1Title">Wrappy</string>
+    <string name="Page2Title">Free</string>
+    <string name="Page3Title">Cloud</string>
+    <string name="Page4Title">Secure</string>
+    <string name="Page5Title">Magic</string>
+    <string name="Page6Title">Powerful</string>
+    <string name="Page7Title">Fast</string>
+    <string name="Page8Title">Privacy</string>
+    <string name="Page9Title">Ecology</string>
+    <string name="Page10Title">Borderless</string>
+    <string name="Page11Title">Revolution</string>
+    <string name="Page1Message">Flattening the World.\nThis is the next-generation SNS platform.</string>
+    <string name="Page2Message">Wrappy is free to use: Includes voice calls,\nvideo calls, TV conferences....</string>
+    <string name="Page3Message">Wrappy allows you to access your messages from multiple devices.</string>
+    <string name="Page4Message">Your messages are 100% encrypted and can be self-destructed</string>
+    <string name="Page5Message">You can easily send and receive currencies from friends and family.</string>
+    <string name="Page6Message">Unlimited storage for your media data\nand chat records!</string>
+    <string name="Page7Message">You can send and receive messages instantly.</string>
+    <string name="Page8Message">You can delete your history at all times.</string>
+    <string name="Page9Message">A simple cryptocurrency ecosystem.</string>
+    <string name="Page10Message">Currencies can be used anywhere,\nfrom any country.</string>
+    <string name="Page11Message">A pioneer in an innovative\n&amp; constantly evolving era.</string>
+    <string name="StartMessaging">Start Messaging</string>
+
+    <string name="id_or_username">Input the username</string>
+    <string name="forget_password">Reset Password</string>
+    <string name="login">Login</string>
+    <string name="waiting_dialog">Waiting…</string>
+    <string name="search_username">Search username</string>
+    <string name="add_contact">ADD CONTACT</string>
+    <string name="title_activity_wallet__complete_">Wallet_Complete_Activity</string>
+
+    <string name="title_create_new_wallet">Create New Wallet</string>
+    <string name="title_new_wallet_created">New Wallet Created</string>
+    <string name="title_wallet_address">Wallet Address</string>
+    <string name="title_backup_wallet">Back Up Wallet</string>
+    <string name="title_change_password_wallet">Change Password</string>
+    <string name="alert_password_wallet">This password encrypts your private key. This does not act as a seed to generate your keys. You will need <b>this password</b> and <b>your private key</b> to unlock your wallet.</string>
+    <string name="sub_title_wallet_dialog">Please enter your wallet password for backup</string>
+    <string name="btn_save_qr_wallet">Save QR Wallet</string>
+
+    <!--Translate in conversation-->
+    <string name="translate_to">Translate to</string>
+    <string name="turn_off_translate">Off</string>
+
+    <!-- Dialog bottom sheet conversation -->
+    <string name="pin_to_top">Pin to top</string>
+    <string name="unpin_from_top">Unpin from top</string>
+    <string name="delete_and_exit">Delete and exit</string>
+    <string name="clean_history">Clean history</string>
+
+    <!-- Settings conversation -->
+    <string name="setting_screen">Setting</string>
+    <string name="setting_search">Search</string>
+    <string name="setting_clear">Clear history</string>
+    <string name="setting_delete_and_leave_group">Delete and leave group</string>
+    <string name="setting_leave_group">Leave group</string>
+    <string name="setting_delete_chat">Delete chat</string>
+    <string name="setting_report_spam">Report spam</string>
+    <string name="setting_notification">Notifications</string>
+    <string name="setting_change_background">Change background</string>
+    <string name="setting_add_member">Add friend</string>
+    <string name="incoming_attachment">1 attachment</string>
+
+    <string name="title_wallet">Wallet</string>
+    <string name="ETH">Ethereum</string>
+    <string name="PRO">Proteusion</string>
+    <string name="seetranslate">See translate</string>
+    <string name="closetranslate">Close translate</string>
+
+    <string name="menu_spam">Spam</string>
+    <string name="menu_violence">Violence</string>
+    <string name="menu_cancel">Cancel</string>
+    <string name="error_repeat_password">Repeat Password mismatch</string>
+    <string name="message_enter_password">Enter a password</string>
+    <string name="old_password_mismatch">Old Password mismatch</string>
+    <string name="message_change_password_success">Change Password successful</string>
+    <string name="backup_success">Backup Successfully</string>
+    <string name="delete_success">Delete Successfully</string>
+    <string name="message_fail_import">Failed to import , please try again</string>
+    <string name="backup">BACKUP</string>
+    <string name="title_member_group_setting">Member</string>
+    <string name="old_password_title">Old password</string>
+    <string name="new_password_title">New password</string>
+    <string name="repeat_password_title">Repeat new password</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="to_address">available_balance</string>
+    <string name="amount">AMOUNT</string>
+    <string name="eth_unit">ETH</string>
+    <string name="USD">USD</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="confirmations">Confirmations</string>
+    <string name="view_more">VIEW MORE</string>
+    <string name="wallet_created_success">WALLET CREATED SUCCESSFULLY</string>
+    <string name="warning_backup_wallet">We highly recommend you backup the Wallet or keystore immediately.</string>
+    <string name="backup_now_button">BACKUP NOW</string>
+    <string name="no_thanks">NO, THANKS</string>
+    <string name="copy_clipboard">Copy To Clipboard</string>
+    <string name="backup_address">Back up address</string>
+    <string name="welcome_wallet_title">WELCOME TO WALLET</string>
+    <string name="import_keystore">Import Keystore</string>
+    <string name="three_dots">…</string>
+    <string name="ringing">Calling………</string>
+    <string name="enter_group_name">Enter group name</string>
+    <string name="add_new_list">Add new list</string>
+    <string name="new_list">New list</string>
+    <string name="key_manager">Key Manager</string>
+    <string name="add_another_account">Add Another Account</string>
+    <string name="check_email_passcode">Please check your messages\nand enter the passcode</string>
+    <string name="vertify_title_noti">We have sent a message to</string>
+    <string name="send_again">Resend passcode</string>
+    <string name="answer_secret_question">Answer your secret question</string>
+    <string name="your_answer">Your Answer</string>
+    <string name="btn_next">Next</string>
+    <string name="input_your_email">Enter your email address to reset password</string>
+    <string name="hint_your_email">Email</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="new_group">New Group</string>
+    <string name="about_us">About us</string>
+    <string name="faq">FAQ</string>
+    <string name="logout">Logout</string>
+    <string name="remove">Remove</string>
+    <string name="sent">Sent</string>
+    <string name="received">Received</string>
+    <string name="all">All</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="mobile_phone">Mobile Phone</string>
+    <string name="gender">Gender</string>
+    <string name="referral">Referral</string>
+    <string name="referral_hint">Referral code</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_update">Update</string>
+    <string name="hint_answer">Answer</string>
+    <string name="choose_secret_question">Choose your security question</string>
+    <string name="choose_new_secret_question">Choose your new secret question</string>
+    <string name="skip">SKIP</string>
+    <string name="complete">COMPLETE</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="add_photo">Add Photo!</string>
+    <string name="error_upload_photo">Upload group photo fail!</string>
+    <string name="error_creating_group">Create Group Fail</string>
+    <string name="select_file_to_send">Select File</string>
+    <string name="google_play_services_not_available">Google Play Services is not available.</string>
+    <string name="english">English</string>
+    <string name="copied_text">Copied Text</string>
+    <string name="history">HISTORY</string>
+    <string name="activity">Activity</string>
+    <string name="error_when_refresh_token">can not refresh access token : please retry!</string>
+    <string name="registration">Registration</string>
+    <string name="update_profile_success">Update successfully</string>
+    <string name="update_profile_fail">Update fail</string>
+    <string name="error_upload_image">Upload fail</string>
+    <string name="logout_all_devices">Logout all devices</string>
+    <string name="logout_device">Logout this device</string>
+    <string name="message_remove_avatar_success">Remove Avatar Success</string>
+    <string name="message_remove_banner_success">Remove Banner Success</string>
+    <string name="hint_password"><small><i>Input Password</i></small></string>
+    <string name="error_reset_password">Reset password fail</string>
+    <string name="warning">Warning</string>
+    <string name="error_tranferring_file">Error transferring file:</string>
+    <string name="message_download_attachment">Do you want to save this file?</string><!-- this flow should be defined again -->
+
+    <string name="error_registration">Registration fail. Try Again!</string>
+
+    <string name="location_message">Location Message</string>
+    <string name="you_sent_sticker">You sent a sticker</string>
+    <string name="message_sticker">Sticker message</string>
+    <string name="user_sent_sticker">%1$s sent a sticker</string>
+    <string name="tab_menu_menu">Menu</string>
+    <string name="tab_menu_conversation">Chat</string>
+    <string name="tab_menu_promotion">Promotion</string>
+    <string name="tab_menu_my_page">My page</string>
+    <string name="promotion_invite_friend">Invite friend</string>
+    <string name="promotion_history">History</string>
+    <string name="page_verify">Account Verification</string>
+    <string name="message_edit">Edit Message</string>
+    <string name="message_delete">Delete Message</string>
+    <string name="message_spam">Report Spam</string>
+    <string name="invite_friend_earn">Invite more friends\nto earn more PTS coin</string>
+    <string name="promotion_description">Wrappy rewards for you when you\ninvite friend install Wrappy app</string>
+    <string name="promotion_invite_friends">Invite friend</string>
+    <string name="verify_send_sms_fail">Send sms fail</string>
+    <string name="verify_send_sms_success">Send sms success</string>
+    <string name="verify_fail">Verify fail</string>
+    <string name="from">from</string>
+    <string name="security_question_change">Change Security Question</string>
+    <string name="security_change_old_question">Answer your old secret question</string>
+    <string name="level">level</string>
+    <string name="success">Success!</string>
+    <string name="secu_success_description">Your secret question change successful</string>
+    <string name="fail">FAIL</string>
+    <string name="upload_fail">Upload fail</string>
+    <string name="cancel_and_home">Cancel this step and return to Login screen?</string>
+    <string name="invite_friends_text">Invite Friend</string>
+    <string name="share_app_text">Let me recommend you this application</string>
+    <string name="email_tile">Email *</string>
+    <string name="logout_noti">Do you want to logout of this device?</string>
+    <string name="share_title">Choose sharing method</string>
+    <string name="referral_text">Enter your referral code (optional)</string>
+    <string name="Referral">Referral</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="question">Question %d</string>
+    <string name="request_send_email_success">Send successful! Please check email to change new password</string>
+    <string name="remove_member_success">Remove %s in this group</string>
+    <string name="skip_referral">Are you sure you don\'t type referral code? you can\'t get +100PTS reward</string>
+    <string name="create_by">Create by %s</string>
+    <string name="chat_message_item">%1$s chat %2$s.</string>
+    <string name="message_kicked_from_group">%s is removed by admin</string>
+    <string name="comming_soon">coming soon</string>
+
+    <string name="create_new_password">Create a password</string>
+    <string name="input_your_password">Input your Password</string>
+    <string name="input_password">Input  new password</string>
+    <string name="input_new_password">Input your new password</string>
+    <string name="input_repeat_password">Confirm new password</string>
+        <string name="fullname">Nickname</string>
+    <string name="info">Info</string>
+    <string name="wrong_format_password">Password must have at least 8 characters. Inlcluding 1 Uppercase, 1 lowercase and 1 number.</string>
+    <string name = "password_is_empty">Password cannot be empty</string>
+    <string name = "pattern_coutdown">Draw your pattern\n\nin %s seconds </string>
+    <string name = "passcode_coutdown">Input your password\n\nin %s seconds </string>
+
+    <string name="reset_your_password">Reset your password</string>
+    <string name="receive_password_via_email">A reset link has been sent to the email address associated with your account.</string>
+    <string name="copy_and_paste_url">If you cannot click the URL, please copy and paste the URL into your browser.</string>
+    <string name="back_to_login">Back to login</string>
+    <string name="resend_link">Resend</string>
+    <string name="local_time_format">MMM dd, yyyy</string>
+    <string name="promotion_format">%1$s from <b>%2$s</b> level (%3$s)</string>
+    <string name="promotion_history_description">More than level 2 aren\'t visible</string>
+
+    <string-array name="profile_gender_display">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string name="forget_passcode">Forget Password</string>
+
+    <string name="update_password">Update password</string>
+    <string name="update_password_title">Please create a password to improve the security on your account</string>
+    <string name="reset_your_password_title">Success! Email has been sent</string>
+    <string name="please_input_the_password">Input your password</string>
+
+    <!--<string name="waiting_develop">This function is developing</string>-->
+</resources>

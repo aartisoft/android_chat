@@ -1,0 +1,10 @@
+<AppUpdater>
+  <update>
+    <latestVersion>15.3.0.006</latestVersion>
+    <url>https://github.com/zom/Zom-Android/releases/download/15.3.0-beta-6/Zom-15.3.0-beta-6-zomrelease-release.apk</url>
+    <releaseNotes>
+- UPDATED: Improved group support
+- FIXES: Issues with adding and approving new friends
+    </releaseNotes>
+  </update>
+</AppUpdater>

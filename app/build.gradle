@@ -1,0 +1,208 @@
+apply plugin: 'com.android.application'
+apply plugin: 'witness'
+apply from: 'signinConfigs.gradle'
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+
+    defaultConfig {
+        //applicationId 'net.wrappy.im'
+        applicationId 'net.wrappy.im'
+        versionCode 23
+        versionName "1.1.7"
+        archivesBaseName = "Wrappy-" + versionName
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+        testApplicationId 'net.wrappy.im.test'
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+        if (getProps("google_translate_apikey") == null) {
+            buildConfigField "String", "GoogleTranslateApiKey", "\"google_translate_apikey\""
+        } else {
+            buildConfigField "String", "GoogleTranslateApiKey", getProps("google_translate_apikey")
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "1536m"
+        preDexLibraries true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            resValue "string", "google_place_api_key", (getProps("google_translate_apikey")) ? getProps("google_translate_apikey") : "[YOUR PROD KEY]"
+            shrinkResources false
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            resValue "string", "google_place_api_key", (getProps("google_translate_apikey")) ? getProps("google_translate_apikey") : "[YOUR DEV KEY]"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            shrinkResources false
+        }
+    }
+
+    // Specifies two flavor dimensions.
+    flavorDimensions "free"
+
+    productFlavors {
+        dev {
+            dimension "free"
+            applicationId = "net.wrappy.im"
+            applicationId 'net.wrappy.im'
+            buildConfigField 'String', 'ROOT_URL', '"http://192.168.100.187:8080/8EF640C4836D96CE990B71F60E0EA1DB/"'
+            buildConfigField 'String', 'DOMAIN', '"imdev.wrappy.network"'
+            buildConfigField 'Boolean', 'IS_DEV', 'true'
+        }
+        free {
+            dimension "free"
+            applicationId = "net.wrappy.im"
+            applicationId 'net.wrappy.im'
+            buildConfigField 'String', 'ROOT_URL', '"https://webserv-ci.wrappy.network:8081/8EF640C4836D96CE990B71F60E0EA1DB/"'
+            buildConfigField 'String', 'DOMAIN', '"im.wrappy.network"'
+            buildConfigField 'Boolean', 'IS_DEV', 'false'
+        }
+        zomrelease {
+            dimension "free"
+            applicationId = "net.wrappy.im"
+            applicationId 'net.wrappy.im'
+        }
+    }
+
+    packagingOptions {
+        exclude 'lib/arm64-v8a/libRSSupport.so'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+
+    }
+
+    lintOptions {
+        disable 'MissingTranslation', 'LocaleFolder'
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+    // set timeouts to 10 minutes to prevent random failures
+    com.android.ddmlib.DdmPreferences.setTimeOut(600000)
+    adbOptions {
+        timeOutInMs 600000
+    }
+
+    dependencyVerification {
+        verify = [
+        ]
+    }
+    buildToolsVersion '26.0.2'
+
+    configurations {
+        all*.exclude group: 'xpp3', module: 'xpp3'
+    }
+}
+
+ext {
+    smackVersion = "4.2.2"
+}
+
+def getProps(String propName) {
+    def propsFile = rootProject.file('local.properties')
+    if (propsFile.exists()) {
+        def props = new Properties()
+        props.load(new FileInputStream(propsFile))
+        if (props.getProperty("google_translate_apikey")) {
+            return props[propName]
+        }
+    }
+    return null;
+
+}
+
+repositories {
+    jcenter()
+    maven { url 'https://github.com/jitsi/jitsi-maven-repository/raw/master/releases' }
+//    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile fileTree(include: '*.aar', dir: 'jitsi')
+    compile 'com.android.support:multidex:1.0.2'
+    compile 'net.zetetic:android-database-sqlcipher:3.5.7@aar'
+    compile project(':otr4jandroid')
+    compile project(':tibetanTextLibrary')
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'commons-codec:commons-codec:1.9'
+    compile 'commons-io:commons-io:2.4'
+    compile 'org.thoughtcrime.ssl.pinning:AndroidPinning:1.0.0'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile project.ext.appcompat
+    compile 'info.guardianproject.cacheword:cachewordlib:0.1.1'
+    compile 'info.guardianproject.iocipher:IOCipher:0.4'
+    compile 'info.guardianproject.netcipher:netcipher:2.0.0-alpha1'
+    compile 'info.guardianproject.netcipher:netcipher-httpclient:2.0.0-alpha1'
+    compile 'cz.msebera.android:httpclient:4.4.1.2'
+    compile 'info.guardianproject.panic:panic:0.5'
+    compile 'de.measite.minidns:minidns-hla:0.2.1'
+    // https://mvnrepository.com/artifact/org.jxmpp/jxmpp-core
+    compile 'org.jxmpp:jxmpp-core:0.5.0'
+    compile 'org.jxmpp:jxmpp-jid:0.5.0'
+    compile 'org.jxmpp:jxmpp-util-cache:0.5.0'
+    // for OMEMO support
+    compile 'org.whispersystems:signal-protocol-java:2.3.0'
+    compile 'org.bouncycastle:bcprov-jdk15on:1.56'
+    compile 'org.whispersystems:curve25519-android:0.3.0'
+    // https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java
+    compile 'com.google.protobuf:protobuf-java:2.5.0'
+    compile 'com.github.ge0rg:MemorizingTrustManager:9e30ffdf7d'
+    compile 'org.ocpsoft.prettytime:prettytime:4.0.0.Final'
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.0.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.5.0@aar'
+    compile 'com.github.javiersantos:AppUpdater:2.5.2'
+    compile 'com.github.QuadFlask:colorpicker:0.0.10'
+    compile project(':patternLibrary')
+
+    compile "org.igniterealtime.smack:smack-android:$smackVersion"
+    compile "org.igniterealtime.smack:smack-android-extensions:$smackVersion"
+//     compile "org.igniterealtime.smack:smack-omemo-signal:$smackVersion"
+    compile "org.igniterealtime.smack:smack-resolver-minidns:$smackVersion"
+    compile "org.igniterealtime.smack:smack-tcp:$smackVersion"
+    compile "org.igniterealtime.smack:smack-core:$smackVersion"
+    compile "org.igniterealtime.smack:smack-extensions:$smackVersion"
+    compile "org.igniterealtime.smack:smack-experimental:$smackVersion"
+    compile "org.igniterealtime.smack:smack-im:$smackVersion"
+    compile "org.igniterealtime.smack:smack-sasl-provided:$smackVersion"
+
+    compile "org.igniterealtime.smack:smack-extensions:$smackVersion"
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    /* compile 'me.ydcool.lib:qrmodule:latest.integration'*/
+    compile 'com.thefinestartist:finestwebview:1.2.7'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.koushikdutta.ion:ion:2.2.1'
+//    implementation project(':geth')
+    compile 'com.journeyapps:zxing-android-embedded:3.5.0'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.facebook.react:react-native:0.49.5'
+    compile 'com.google.android.gms:play-services-places:11.6.2'
+    implementation project(':qrmodule')
+//    compile('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
+//        transitive = true;
+//    }
+    compile 'com.github.yalantis:ucrop:2.2.1'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    compile 'com.github.GoodieBag:Pinview:v1.3'
+    compile "me.leolin:ShortcutBadger:1.1.21@aar"
+}

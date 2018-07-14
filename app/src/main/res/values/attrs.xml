@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="messageRoundBackground" format="reference" />
+    <attr name="messageTextPrimary" format="color" />
+    <attr name="messageTextSecondary" format="color" />
+    <attr name="contactTextPrimary" format="color" />
+    <attr name="contactTextSecondary" format="color" />
+    <attr name="chatBackground" format="color" />
+    <attr name="listBackground" format="color" />
+    <attr name="toolbarBackground" format="color" />
+    <attr name="inputBackground" format="color"/>
+    <attr name="attachIcon" format="reference"/>
+
+  <declare-styleable name="CircleColorImageView">
+    <attr name="circleColor" format="color"/>
+  </declare-styleable>
+  <declare-styleable name="FlowLayout">
+    <attr name="itemWidthPadding" format="dimension"/>
+    <attr name="itemHeightPadding" format="dimension"/>
+  </declare-styleable>
+  <declare-styleable name="AppFonts">
+    <attr name="font_type" format="enum">
+      <enum name="regular" value="0"/>
+      <enum name="italic" value="1"/>
+      <enum name="light" value="2"/>
+      <enum name="light_italic" value="3"/>
+      <enum name="bold" value="4"/>
+      <enum name="bold_italic" value="5"/>
+    </attr>
+  </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+</resources>

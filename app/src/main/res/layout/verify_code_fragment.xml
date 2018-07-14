@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lnVerifyContainer">
+
+    <net.wrappy.im.helper.layout.AppTextView
+        style="@style/AppText_Default_Light"
+        font_type="light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/vertify_title_noti" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spnProfileCountryCodes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+        <net.wrappy.im.helper.layout.AppEditTextView
+            android:id="@+id/edVerifyPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:textColor="#007aff"
+            android:textSize="16sp"
+            style="@style/EditText_Phone"/>
+
+        <ImageButton
+            android:id="@+id/btnVerifyChangePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:paddingLeft="5dp"
+            android:src="@drawable/page_1" />
+    </LinearLayout>
+
+
+    <net.wrappy.im.helper.layout.AppTextView
+        style="@style/AppText_Default_Light"
+        font_type="light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/check_email_passcode" />
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/txt_pin_entry"
+        app:pinBackground="@drawable/bg_passcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pinWidth="40dp"
+        app:pinHeight="40dp"
+        app:pinLength="5"
+        app:cursorVisible="true"
+        app:forceKeyboard="true"
+        app:hint="0"
+        app:inputType="number"
+        app:password="false"/>
+
+    <net.wrappy.im.helper.layout.AppButton
+        android:id="@+id/btnVerifyCheck"
+        style="@style/AppButton_OK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/action_done" />
+
+    <net.wrappy.im.helper.layout.AppTextView
+        android:id="@+id/btnSendCodeAgain"
+        font_type="light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/send_again"
+        android:textColor="#444344"
+        android:textSize="14sp" />
+</LinearLayout>

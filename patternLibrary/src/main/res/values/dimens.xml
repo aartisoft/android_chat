@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2016 Zhang Hai <Dreaming.in.Code.ZH@Gmail.com>
+  ~ All Rights Reserved.
+  -->
+
+<resources>
+    <dimen name="pl_pattern_dot_line_width">2dp</dimen>
+    <dimen name="pl_pattern_dot_size">1dp</dimen>
+    <dimen name="pl_pattern_dot_size_activated">15dp</dimen>
+    <dimen name="pl_pattern">58dp</dimen>
+</resources>

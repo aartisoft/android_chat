@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_question_duplicate">คุณไม่สามารถเลือกคำถามรักษาความปลอดภัยเดียวกัน</string>
+    <string name="error_empty_answer">คำตอบของคำถามที่ %d เป็นที่ว่างเปล่า</string>
+    <string name="error_min_length_answer">คำตอบของคุณของคำถาม %d ต้องมีอย่างน้อย 3 ตัวอักษร</string>
+    <string name="error_duplicate_answer">你的回答必須是不同的</string>
+    <string name="error_invalid_text_length">用戶名必須至少為6個字符</string>
+    <string name="error_invalid_characters">用戶名不能包含特殊字符</string>
+    <string name="error_empty_phone">請輸入手機號碼</string>
+    <string name="error_empty_email">請輸入電子郵件地址</string>
+    <string name="error_empty_passcode">請輸入密碼</string>
+    <string name="error_invalid_passcode">請檢查密碼</string>
+    <string name="error_invalid_email">電子郵件地址是不是有效格式</string>
+    <string name="error_group_name_empty">請輸入組名</string>
+    <string name="error_group_empty">請選擇會員</string>
+    <string name="error_empty_username">請輸入您的用戶名</string>
+    <string name="error_wrong_answer_1st">คำตอบที่ผิด! ลองอีกครั้ง</string>
+    <string name="error_wrong_answer_2nd">คำตอบที่ผิด! โปรดลองกับอีเมล</string>
+
+
+    <!--error code from server-->
+    <string name="error_0">อินเทอร์เน็ตอาจจะใช้งานไม่ได้ กรุณาลองอีกครั้ง</string>
+    <string name="error_8000">รุ่นไม่ตรงกัน</string>
+    <string name="error_8001">การเข้าถึงถูกปฏิเสธ</string>
+    <string name="error_8002">กรุณาลองใหม่อีกครั้งในภายหลัง</string>
+    <string name="error_8003">เป็นสมาชิกอยู่แล้ว</string>
+    <string name="error_8004">สมาชิกไม่ได้มีอยู่</string>
+    <string name="error_8005">สมาชิกเปิดใช้งานแล้ว</string>
+    <string name="error_8006">สมาชิกไม่เปิดใช้งาน</string>
+    <string name="error_8007">สมาชิกป้อนที่อยู่อีเมลที่ไม่ถูกต้อง</string>
+    <string name="error_8009">รหัสยืนยันหมดอายุหรือไม่ถูกต้อง</string>
+    <string name="error_8010">ภาพที่ไม่ได้อยู่</string>
+    <string name="error_8011">ภาพที่เก็บไฟล์ล้มเหลวเป็นที่ว่างเปล่า</string>
+    <string name="error_8013">ภาพที่ดึงข้อมูลไฟล์ล้มเหลวไม่พร้อมใช้งาน</string>
+    <string name="error_8016">ประเภทสินทรัพย์ไม่ได้กำหนด</string>
+    <string name="error_8017">ลงทะเบียนไม่ได้อยู่</string>
+    <string name="error_8020">ไม่สามารถส่งอีเมล</string>
+    <string name="error_8021">SMS มีขีด จำกัด ของตัวละครเกิน</string>
+    <string name="error_8022">ชื่อผู้ใช้อยู่แล้ว</string>
+    <string name="error_8023">หมายเลขโทรศัพท์มือถือที่มีอยู่แล้ว</string>
+    <string name="error_8024">อีเมล์ที่มีอยู่แล้ว</string>
+    <string name="error_8025">ทรัพยากรไม่อยู่</string>
+    <string name="error_8026">ไม่พบคำถามการรักษาความปลอดภัยของสมาชิก</string>
+    <string name="error_8027">สมาชิกไม่ได้อยู่</string>
+    <string name="error_8028">อีเมล์ไม่อยู่</string>
+    <string name="error_8029">รายงานที่มีอยู่แล้ว</string>
+    <string name="error_8030">รายงานไม่ได้อยู่</string>
+    <string name="error_8031">รหัสอ้างอิงไม่ได้อยู่</string>
+    <string name="error_8032">สร้างผู้ใช้ XMPP ล้มเหลว</string>
+    <string name="error_8033">อ๊ะ! คุณตอบคำถามการรักษาความปลอดภัยที่ไม่ถูกต้อง</string>
+    <string name="error_8034">ชื่อผู้ใช้หรือรูปแบบไม่ถูกต้อง</string>
+    <string name="error_8035">The username or password is incorrect. You have only 2 times to input again.</string>
+    <string name="error_8036">The username or password is incorrect. You have only 1 time to input again.</string>
+    <string name="error_8037">The username or password is incorrect. Your account is locked in 3 hours.</string>
+    <string name="error_8038">The username or password is incorrect. Your account has been blocked.</string>
+    <string name="error_unknown">An error occurred, please try again later.</string>
+    <string name="error_empty_nickname">Your Nickname must have at least 1 character</string>
+
+
+</resources>

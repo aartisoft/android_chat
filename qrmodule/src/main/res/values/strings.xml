@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">QrModule</string>
+    <string name="scan_hint">Scan Barcode</string>
+</resources>
